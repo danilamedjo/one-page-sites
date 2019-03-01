@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Survey Form</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="../css/style.css">
+    <script src="../js/main.js"></script>
+</head>
+
+<body>
+
+    <header>
+        <div class="main-header">
+            <h1 id="title"> Survey Form</h1>
+        </div>
+    </header>
+
+    <main>
+
+        <section>
+            <div class="form-outer">
+                <p id="description">
+                    Nulla bibendum turpis lectus, vel tempor eros feugiat vel. Ut erat ante, aliquet eu augue at,
+                    sollicitudin
+                    pretium ligula.
+                </p>
+            </div>
+        </section>
+
+
+
+        <!-- survey form -->
+        <div class="inner-form">
+            <form id="survey-form">
+
+                <!-- name -->
+                <div class="form-row">
+                    <div class="form-left-side">
+                        <label id="survey-name-label" for="survey-name">
+                            *Name:
+                        </label>
+                    </div>
+                    <div class="form-right-side">
+                        <input class="input-field" type="text" id="survey-name" placeholder="Enter your name" autofocus
+                            required>
+                    </div>
+
+                </div>
+                <!-- end of name -->
+
+                <!-- email -->
+                <div class="form-row">
+                    <div class="form-left-side">
+                        <label id="survey-email-label" for="survey-email">
+                            *Email:
+                        </label>
+                    </div>
+                    <div class="form-right-side">
+                        <input class="input-field" type="email" id="survey-email" placeholder="Enter your email"
+                            required>
+                    </div>
+                </div>
+                <!-- end of email -->
+
+                <!-- age -->
+                <div class="form-row">
+                    <div class="form-left-side">
+                        <label id="survey-age-label" for="survey-age">
+                            *Age:
+                        </label>
+                    </div>
+                    <div class="form-right-side">
+                        <input class="input-field" type="number" id="survey-age" placeholder="Enter your age" min="12"
+                            max="112" validate required>
+                    </div>
+                </div>
+                <!-- end of age -->
+
+            </form>
+        </div>
+        <!-- end of survey form -->
+
+    </main>
+</body>
+
+</html>
