@@ -14,18 +14,18 @@
 
     <header>
         <div class="main-header">
-            <h1 id="title"> Survey Form</h1>
+            <h1 id="title">Customer Satisfaction Survey</h1>
         </div>
     </header>
 
-    <main>
+    <main class="main">
 
         <section>
-            <div class="form-outer">
-                <p id="description">
-                    Nulla bibendum turpis lectus, vel tempor eros feugiat vel. Ut erat ante, aliquet eu augue at,
-                    sollicitudin
-                    pretium ligula.
+            <div id="form-outer">
+                <p class="description">
+                    Want to know what your customers are saying about you?
+                    Customer satisfaction surveys can help you find out what people think of your company, get feedback
+                    on customer service, and more.
                 </p>
             </div>
         </section>
@@ -34,6 +34,7 @@
 
         <!-- survey form -->
         <div class="inner-form">
+
             <form id="survey-form">
 
                 <!-- name -->
@@ -78,6 +79,114 @@
                     </div>
                 </div>
                 <!-- end of age -->
+
+                <!-- dropdown -->
+                <div class="form-row">
+                    <div class="form-left-side">
+                        <label for="dropdown">
+                            Which option best describe your current position?
+                        </label>
+                    </div>
+                    <div class="form-right-side">
+                        <select id="dropdown" name="position" class="dropdown">
+                            <option selected disabled value class="dropdown-description">Select an option</option>
+                            <option value="student">Student</option>
+                            <option value="learner">Learner</option>
+                            <option value="job">Full time job</option>
+                            <option value="blank">Prefer not to say</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                </div>
+                <!-- end of dropdown -->
+
+                <!-- radio buttons -->
+                <div class="form-row">
+                    <div class="form-left-side">
+                        <label for="radio-buttons">
+                            *How likely is it that you would recommend this company to a friend or colleaque?
+                        </label>
+                    </div>
+                    <div class="form-right-side">
+                        <ul style="list-style: none" name="radio-buttons">
+                            <li class="radio-button">
+                                <label for="option-def">
+                                    <input type="radio" name="radio-option" id="option-def">
+                                    Definitely
+                                </label>
+                            </li>
+                            <li class="radio-button">
+                                <label for="option-may">
+                                    <input type="radio" name="radio-option" id="option-may">
+                                    Maybe
+                                </label>
+                            </li>
+                            <li class="radio-button">
+                                <label for="option-not">
+                                    <input type="radio" name="radio-option" id="option-not">
+                                    Not sure
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- end of radio buttons -->
+
+                <!-- checkboxes -->
+                <div class="form-row">
+                    <div class="form-left-side">
+                        <label for="user-reviews">
+                            Which of the following words would you use to describe our products?
+                            (Select all that apply)
+                        </label>
+                    </div>
+                    <div class="form-right-side">
+                        <ul style="list-style: none" id="user-reviews" class="checkboxes">
+                            <li class="checkbox">
+                                <label for="option-checkbox1">
+                                    <input type="checkbox" id="option-checkbox1">
+                                    Reliable</label>
+                            </li>
+                            <li class="checkbox">
+                                <label for="option-checkbox2">
+                                    <input type="checkbox" id="option-checkbox2">
+                                    High quality</label>
+                            </li>
+                            <li class="checkbox">
+                                <label for="option-checkbox3">
+                                    <input type="checkbox" id="option-checkbox3">
+                                    Impractical</label>
+                            </li>
+                            <li class="checkbox">
+                                <label for="option-checkbox4">
+                                    <input type="checkbox" id="option-checkbox4">
+                                    Useful</label>
+                            </li>
+                            <li class="checkbox">
+                                <label for="option-checkbox5">
+                                    <input type="checkbox" id="option-checkbox5">
+                                    Overpriced</label>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- end of checkboxes -->
+
+                <div class="form-row">
+                    <div class="form-left-side">
+                        <label for="comments">
+                            Do you have any other comments, questions, or concerns?
+                        </label>
+                    </div>
+                    <div class="form-right-side">
+                        <textarea rows="4" cols="50" class="comments" id="comments" name="comments"
+                            placeholder="Enter your comment here..."></textarea>
+                    </div>
+                </div>
+
+                <button id="submit" type="submit" class="submit-button">
+                    Submit
+                </button>
 
             </form>
         </div>

@@ -1,3 +1,194 @@
-.form-row{
+/*------------------------------------------------------------------
+[ RESET ]
+-------------------------------------------------------------------*/
+
+html {
+  font-size: 100%;
+  min-height: 100%;
+  sx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body, div, span, h1, h2, h3, h4, h5, h6, p, em, a, img, strong, sub, b, u, i, ul, ol, li, form, label {
+  font-size: 100%;
+  margin: 0;
+  padding: 0;
+  vertical-align: baseline;
+  border: 0;
+  outline: 0;
+  background: transparent;
+}
+
+a:active, a:hover, a:focus, input:active, button:active, button, textarea:focus, input:focus, ins {
+  text-decoration: none;
+  outline: 0;
+}
+
+input, select, button, textarea {
+  font-size: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+button, input[type=button], input[type=reset], input[type=submit] {
+  overflow: visible;
+  cursor: pointer;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+button[disabled], input[disabled] {
+  cursor: default;
+}
+
+article, aside, details, figcaption, figure, footer, header, menu, nav, section, summary {
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  vertical-align: middle;
+  border: 0;
+}
+
+/*------------------------------------------------------------------
+-------------------------------------------------------------------*/
+
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab');
+
+html, body {
+  background-color: #bae478;
+  font-family: 'Roboto Slab', Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-variant: normal;
+  min-width: 320px;
+}
+
+header {
+  font-size: 40px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 25px;
+  margin-bottom: 20px;
+}
+
+.main {
+  background-color: beige;
+  margin: 0 auto;
+  border-radius: 10px;
+  width: 75%;
+  max-width: 900px;
+  padding: 20px;
+}
+
+#form-outer, form {
+  padding: 10px 20px;
+}
+
+.description {
+  text-align: center;
+  margin: 15px;
+}
+
+.form-left-side {
+  text-align: right;
+  width: 45%;
+  margin-right: 10px;
+}
+
+.form-right-side {
+  text-align: left;
+  width: 50%;
+  margin-left: 10px;
+}
+
+.input-field {
+  font-size: 15px;
+  margin-top: -10px;
+  padding: 5px;
+  width: 15em;
+  border: 1px solid #c0c0c0;
+  border-radius: 40px 20px;
+  -webkit-transition: width .35s ease-in-out;
+  transition: width .35s ease-in-out;
+}
+
+.input-field:focus {
+  width: 20em;
+  border: 1px solid orange;
+  border-radius: 40px 20px;
+  outline: none;
+}
+
+#survey-age {
+  width: 10em;
+}
+
+.dropdown {
+  height: 30px;
+  width: 15em;
+  border: 1px solid #c0c0c0;
+  border-radius: 40px 20px;
+  font-size: 15px;
+  /* -webkit-appearance: none; */
+  /* appearance: none; */
+}
+
+.dropdown:focus {
+  border: 1px solid orange;
+  border-radius: 40px 20px;
+  outline: none;
+}
+
+.radio-button, .checkbox {
+  position: relative;
+
+  display: block;
+  padding-bottom: 10px;
+}
+
+.form-row {
   display: flex;
+  padding: 10px;
+  vertical-align: text-top;
+  /* flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between; */
+}
+
+.comments{
+  width: 80%;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.submit-button {
+  margin: 10px auto;
+  border: none;
+  font-size: 17px;
+  padding: 10px 20px;
+  -moz-border-radius: 25px;
+  -webkit-border-radius: 25px;
+  border-radius: 25px;
+  display: block;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+  text-align: center;
+  transition: all 0.2s;
+  background-color: #f1bb4e;
+  cursor: pointer;
+}
+
+.submit-button:hover {
+  background-color: rgb(255, 149, 61);
+}
+
+.submit-button:active {
+  position: relative;
+  top: 1px;
 }
