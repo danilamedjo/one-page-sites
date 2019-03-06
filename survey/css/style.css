@@ -53,8 +53,7 @@ img {
   border: 0;
 }
 
-/*------------------------------------------------------------------
--------------------------------------------------------------------*/
+/*------------------------------------------------------------------*/
 
 @import url('https://fonts.googleapis.com/css?family=Roboto+Slab');
 
@@ -127,6 +126,7 @@ header {
 }
 
 .dropdown {
+  margin-top: 5px;
   height: 30px;
   width: 15em;
   border: 1px solid #c0c0c0;
@@ -191,4 +191,27 @@ header {
 .submit-button:active {
   position: relative;
   top: 1px;
+}
+
+/*------------------------------------------------------------------
+[ RESPONSIVE ]
+-------------------------------------------------------------------*/
+
+@media screen and (max-width: 833px) {
+
+  .input-field{
+    width: 80%;
+  }
+
+  .input-field:focus{
+    width: 80%;
+  }
+
+  #survey-age{
+    width: 80%;
+  }
+
+  .dropdown{
+    width: 90%;
+  }
 }
